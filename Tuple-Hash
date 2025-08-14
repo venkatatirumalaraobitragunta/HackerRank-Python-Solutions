@@ -1,0 +1,5 @@
+#This Python program reads a list of integers, converts it into a tuple, and prints its hash value.
+    n = int(input())
+    integer_list = map(int, input().split())
+    integer_list=tuple(integer_list)
+    print(hash(integer_list))
