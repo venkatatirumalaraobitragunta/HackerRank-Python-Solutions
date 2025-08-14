@@ -1,0 +1,13 @@
+#Finds the second lowest score among students and prints their names in alphabetical order.
+N=int(input())
+Students=[]
+ScoreList=[]
+for i in range(N):
+    name=input()
+    score=float(input())
+    Students.append([name,score])
+    ScoreList.append(score)
+sorted_list=sorted(set(ScoreList)) 
+for name,score in sorted(Students):
+    if sorted_list[1]==score:
+        print(name)
