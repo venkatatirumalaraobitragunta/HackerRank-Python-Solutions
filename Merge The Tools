@@ -1,0 +1,14 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    for i in range(0,len(string),k):
+        S=string[i:i+k]
+        L=[]
+        for i in S:
+            if i not in L:
+                L+=[i]
+        output=''.join(L)
+        print(output)
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
