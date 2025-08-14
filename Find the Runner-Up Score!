@@ -1,0 +1,12 @@
+#Second Maximum
+     n = int(input())
+    arr = map(int, input().split())
+    L=[]
+    for i in arr:
+        if i not in L:
+            L.append(i)
+        else:
+            continue 
+    Max=max(L)
+    R=L.remove(Max)
+    print(max(L))
