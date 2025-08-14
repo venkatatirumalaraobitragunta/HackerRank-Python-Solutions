@@ -1,0 +1,13 @@
+#This Python program stores the marks of multiple students in a dictionary and calculates the average marks of a specific student, displaying the result with exactly two decimal places.
+N=int(input())
+student_marks={}
+
+for i in range(N):
+    data = input().split()
+    name = data[0]
+    scores = list(map(float, data[1:]))
+    student_marks[name] = scores
+s=input()
+L=len(student_marks[s])
+avg=(sum(student_marks[s])/L)
+print(f"{avg:.2f}")
