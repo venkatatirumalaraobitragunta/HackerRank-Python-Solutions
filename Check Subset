@@ -1,0 +1,7 @@
+N=int(input())
+for i in range(N):
+    a=int(input())
+    seta=set(map(int,input().split()))
+    b=int(input())
+    setb=set(map(int,input().split()))
+    print(seta.issubset(setb))
