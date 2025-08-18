@@ -1,0 +1,6 @@
+a=int(input())
+seta=set(map(int,input().split()))
+b=int(input())
+setb=set(map(int,input().split()))
+res=seta.symmetric_difference(setb)  
+print(len(res))
