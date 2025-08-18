@@ -1,0 +1,6 @@
+a=int(input())
+seta=set(map(int,input().split()))
+b=int(input())
+setb=set(map(int,input().split()))
+res=seta.difference(setb)  
+print(len(res))
