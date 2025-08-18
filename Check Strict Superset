@@ -1,0 +1,6 @@
+Set=set(map(int,input().split()))
+n=int(input())
+Seta=set(map(int,input().split()))
+Setb=set(map(int,input().split()))
+Setc=Seta.union(Setb)
+print(Set.issuperset(Setc))
