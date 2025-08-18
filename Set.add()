@@ -1,0 +1,6 @@
+N=int(input())
+L=[]
+for i in range(N):
+    s=input() 
+    L+=[s]
+print(len(set(L)))
