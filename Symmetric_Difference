@@ -1,0 +1,7 @@
+M=int(input())
+seta=set(map(int,input().split()))
+N=int(input())
+setb=set(map(int,input().split()))
+res=seta.symmetric_difference(setb) 
+for i in sorted(res):
+    print(i)
