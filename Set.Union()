@@ -1,0 +1,6 @@
+n1=int(input())
+seta=set(map(int,input().split()))
+n2=int(input())
+setb=set(map(int,input().split()))
+S=seta.union(setb) 
+print(len(S))
