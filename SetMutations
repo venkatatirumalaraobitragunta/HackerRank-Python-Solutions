@@ -1,0 +1,15 @@
+N=int(input()) 
+seta=set(map(int,input().split()))
+n=int(input())
+for i in range(n):
+    s=input().split()[0]
+    setb=set(map(int,input().split()))
+    if s=="intersection_update":
+        seta.intersection_update(setb)
+    elif s=="update":
+        seta.update(setb)  
+    elif s=="symmetric_difference_update":
+        seta.symmetric_difference_update(setb)  
+    elif s=="difference_update":
+        seta.difference_update(setb)   
+print(sum(seta))
